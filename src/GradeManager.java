@@ -69,52 +69,52 @@ public class GradeManager {
     }
 
     // This method calculates the average of elective subject grades
-//    public double calculateElectiveAverage(String studentId) {
-//        double total = 0;
-//        int count = 0;
-//
-//        for (int i = 0; i < gradeCount; i++) {
-//            if (grades[i].getStudentId().equals(studentId)) {
-//                if (grades[i].getSubject() instanceof ElectiveSubject) {
-//                    total += grades[i].getGrade();
-//                    count++;
-//                }
-//            }
-//        }
-//
-//        if (count == 0) return 0.0;
-//        return total / count;
-//    }
-//
-//    // This method calculates the overall average (all subjects)
-//    public double calculateOverallAverage(String studentId) {
-//        double total = 0;
-//        int count = 0;
-//
-//        for (int i = 0; i < gradeCount; i++) {
-//            if (grades[i].getStudentId().equals(studentId)) {
-//                total += grades[i].getGrade();
-//                count++;
-//            }
-//        }
-//
-//        if (count == 0) return 0.0;
-//        return total / count;
-//    }
-//
-//    //This method gets the count of grades for a specific student
-//    public int getGradeCountForStudent(String studentId) {
-//        int count = 0;
-//        for (int i = 0; i < gradeCount; i++) {
-//            if (grades[i].getStudentId().equals(studentId)) {
-//                count++;
-//            }
-//        }
-//        return count;
-//    }
-//
-//    //This method gets the total number of grades
-//    public int getGradeCount() {
-//        return gradeCount;
-//    }
-//}
+    public double calculateElectiveAverage(String studentId) {
+        double total = 0;
+        int count = 0;
+
+        for (int i = 0; i < gradeCount; i++) {
+            if (grades[i].getStudentId().equals(studentId)) {
+                if (grades[i].getSubject() instanceof ElectiveSubject) {
+                    total += grades[i].getGrade();
+                    count++;
+                }
+            }
+        }
+
+        if (count == 0) return 0.0;
+        return total / count;
+    }
+
+    // This method calculates the overall average (all subjects)
+    public double calculateOverallAverage(String studentId) {
+        double total = 0;
+        int count = 0;
+
+        for (int i = 0; i < gradeCount; i++) {
+            if (grades[i].getStudentId().equals(studentId)) {
+                total += grades[i].getGrade();
+                count++;
+            }
+        }
+
+        if (count == 0) return 0.0;
+        return total / count;
+    }
+
+    //This method gets the count of grades for a specific student
+    public int getGradeCountForStudent(String studentId) {
+        int count = 0;
+        for (int i = 0; i < gradeCount; i++) {
+            if (grades[i].getStudentId().equals(studentId)) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    //This method gets the total number of grades
+    public int getGradeCount() {
+        return gradeCount;
+    }
+}
