@@ -1,4 +1,4 @@
-// This class manages all grades in the system
+// This class manages all grades in the system; uses composition
 public class GradeManager {
     // Private fields
     private Grade[] grades;          // Array to store all grades
