@@ -34,15 +34,15 @@ public class HonorsStudent extends Student {
         return passingGrade;
     }
 
-//    @Override
-//    public double calculateAverageGrade() {
-//        // Check if gradeManager reference exists
-//        if (gradeManager == null) {
-//            return 0.0;  // No grade manager available
-//        }
-//        // Use GradeManager to calculate overall average
-//        return gradeManager.calculateOverallAverage(getStudentId());
-//    }
+    @Override
+    public double calculateAverageGrade() {
+        // Check if gradeManager reference exists
+        if (gradeManager == null) {
+            return 0.0;  // No grade manager available
+        }
+        // Use GradeManager to calculate overall average
+        return gradeManager.calculateOverallAverage(getStudentId());
+    }
 
     @Override
     public boolean isPassing() {
