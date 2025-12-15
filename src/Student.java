@@ -1,7 +1,7 @@
 // This is the base class for all student types
 // It implements the Gradable interface
 
-abstract class Student implements Gradable {
+public abstract class Student implements Gradable {
     // Static field; a shared counter for generating unique student IDs
     private static int studentCounter = 0;
 
