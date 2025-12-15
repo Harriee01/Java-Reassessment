@@ -20,7 +20,7 @@ public abstract class Subject {
         return subjectCode;  // Returns the value of subjectCode
     }
 
-    // Setter methods - allow other classes to modify private fields
+    // Setter methods allow other classes to modify private fields
     public void setSubjectName(String subjectName) {
         this.subjectName = subjectName;  // Updates the subjectName field
     }
