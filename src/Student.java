@@ -15,7 +15,7 @@ public abstract class Student implements Gradable {
 
     // Reference to GradeManager - needed to calculate averages
     // This will be set from the Main class
-  //  protected GradeManager gradeManager;
+    protected GradeManager gradeManager;
 
     // This constructor initializes a new Student object
     public Student(String name, int age, String email, String phone) {
